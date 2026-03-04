@@ -109,6 +109,41 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('.glass-panel').forEach(panel => {
         observer.observe(panel);
+});
+
+    // Mobile Menu Toggle
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+    const navItems = document.querySelectorAll('.nav-links li a');
+
+    if (mobileMenu) {
+        mobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.toggle('is-active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                mobileMenu.classList.remove('is-active');
+                navLinks.classList.remove('active');
+            });
+        });
+    }
+
+    // Loader Logic (Wait for window load to ensure initial frames and assets are ready)
+    window.addEventListener('load', () => {
+        const loader = document.getElementById('loader');
+        if (loader) {
+            // Add a small delay for smoother transition effect
+            setTimeout(() => {
+                loader.classList.add('hidden');
+                // Optional: remove from DOM after fade out
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                }, 800);
+            }, 500);
+        }
     });
 
     // Lightbox Functionality
