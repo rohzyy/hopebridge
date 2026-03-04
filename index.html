@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HopeBridge | Cinematic Journey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#hero" class="logo">Hope<span>Bridge</span></a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#camp">Camp</a></li>
+                <li><a href="#story">Story</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#volunteer">Volunteer</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#support">Support</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Fixed background canvas -->
+    <canvas id="scroll-sequence"></canvas>
+
+    <!-- Scrollable content -->
+    <main class="content-container">
+        
+        <section id="hero" class="scroll-section" style="justify-content: flex-start;">
+            <div class="glass-panel">
+                <h1 class="title">Hope Begins With You</h1>
+                <p class="subtitle">Every action creates a ripple. Join our journey to restore humanity and rebuild futures.</p>
+            </div>
+        </section>
+
+        <section id="camp" class="scroll-section" style="justify-content: flex-end;">
+            <div class="glass-panel text-right">
+                <h2 class="title">The Relief Camps</h2>
+                <p class="subtitle">Providing safe havens and essential resources for those displaced by crisis.</p>
+            </div>
+        </section>
+
+        <section id="story" class="scroll-section" style="justify-content: flex-start;">
+            <div class="glass-panel text-left">
+                <h2 class="title">Education & Support</h2>
+                <p class="subtitle">Empowering the next generation through education, healing, and humanitarian aid.</p>
+            </div>
+        </section>
+
+        <section id="impact" class="scroll-section" style="justify-content: center;">
+            <div class="glass-panel center-panel text-center">
+                <h2 class="title">Our Impact</h2>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h3>2.5M+</h3>
+                        <p>Meals Served</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>450+</h3>
+                        <p>Camps Built</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>120K</h3>
+                        <p>Lives Touched</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="scroll-section" style="justify-content: flex-start;">
+            <div class="glass-panel text-left">
+                <h2 class="title">Gallery</h2>
+                <p class="subtitle">Moments of courage, captured in time.</p>
+                <div class="gallery-grid">
+                    <div class="gallery-item gallery-image" data-src="https://res.cloudinary.com/dswz3blxe/image/upload/v1772614490/1_shha0j.jpg" style="background-image: url('https://res.cloudinary.com/dswz3blxe/image/upload/v1772614490/1_shha0j.jpg');"></div>
+                    <div class="gallery-item gallery-image" data-src="https://res.cloudinary.com/dswz3blxe/image/upload/v1772614490/2_j5nk0t.jpg" style="background-image: url('https://res.cloudinary.com/dswz3blxe/image/upload/v1772614490/2_j5nk0t.jpg');"></div>
+                    <div class="gallery-item gallery-image" data-src="https://res.cloudinary.com/dswz3blxe/image/upload/v1772614491/3_gfspwd.jpg" style="background-image: url('https://res.cloudinary.com/dswz3blxe/image/upload/v1772614491/3_gfspwd.jpg');"></div>
+                    <div class="gallery-item gallery-image" data-src="https://res.cloudinary.com/dswz3blxe/image/upload/v1772614491/4_tl6zop.jpg" style="background-image: url('https://res.cloudinary.com/dswz3blxe/image/upload/v1772614491/4_tl6zop.jpg');"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="volunteer" class="scroll-section" style="justify-content: flex-end;">
+            <div class="glass-panel text-right">
+                <h2 class="title">Volunteer Activities</h2>
+                <ul class="volunteer-list">
+                    <li><strong>Medical Assistance:</strong> Support our field health clinics.</li>
+                    <li><strong>Supply Distribution:</strong> Help provide meals and resources.</li>
+                    <li><strong>Educational Support:</strong> Teach and mentor at relief camps.</li>
+                    <li><strong>Logistics Coordination:</strong> Help transport aid efficiently.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="scroll-section" style="justify-content: center;">
+            <div class="glass-panel center-panel text-center">
+                <h2 class="title">Reach Out</h2>
+                <p class="subtitle">We'd love to hear from you. Get in touch to partner with our cause.</p>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" class="form-input" required>
+                    <input type="email" placeholder="Your Email" class="form-input" required>
+                    <textarea placeholder="Your Message" class="form-input" rows="4" required></textarea>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="support" class="scroll-section" style="justify-content: center;">
+            <div class="glass-panel center-panel text-center">
+                <h2 class="title">Be the Light</h2>
+                <p class="subtitle">Your contribution provides shelter, food, and hope for a better tomorrow.</p>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-primary">Donate Now</a>
+                    <a href="#" class="btn btn-outline">Volunteer</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="glass-footer">
+            <p>&copy; 2026 RM. All rights reserved.</p>
+        </footer>
+
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightbox-img" class="lightbox-content" src="">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
