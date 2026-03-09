@@ -6,13 +6,6 @@ This project creates a cinematic **video-style frame transition effect** for web
 
 ---
 
-## 🔗 Demo
-
-🌐 Live Preview: *Add your deployed link here*
-📹 Video Tutorial / Demo: *Add your video link here*
-
----
-
 ## 🛠 Built With
 
 * **HTML5**
