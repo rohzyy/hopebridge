@@ -1,3 +1,5 @@
+// Made with Help of Llama 3.3 70B (Meta)
+
 const canvas = document.getElementById("scroll-sequence");
 const context = canvas.getContext("2d");
 
