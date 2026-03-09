@@ -63,19 +63,7 @@ project-folder
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/video-frame-effect-site.git
-```
-
-Open the project:
-
-```bash
-cd video-frame-effect-site
-```
-
-Run locally:
-
-```
-Open index.html in your browser
+git clone https://github.com/rohzyy/hopebridge.git
 ```
 
 ---
