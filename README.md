@@ -48,20 +48,6 @@ project-folder
 └── Images/           # Project images & assets
 ```
 
----
-
-## 🖼 Website Preview
-
-### Hero Section
-
-![Website Preview](Images/preview1.png)
-
-### Frame Animation Effect
-
-![Animation Preview](Images/preview2.png)
-
----
-
 ## ⚙️ How It Works
 
 1. **Google Labs (Whisk + Flow)** generates visual storytelling scenes.
